@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;    
+}
+body{
+    position: relative;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+.logo{
+    color: black;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor:pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 25px;
+}
+nav ul li a{
+    color:black;
+    font-size: 15px;
+    font-weight: bold; 
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color:rgba(226, 169, 115, 0.712);
+    transition: .2s;
+}
+header{
+    width: 92%;
+    margin: 1;
+    padding: 13px 0;
+    position:fixed;
+    top: 40px;
+    left: 30px;
+    right: 30px;
+    border-radius: 50px;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 0 0 30px rgb(0 0 0 /8%);
+}
+.background{
+    position:static;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 100%;
+    overflow: hidden;
+}
+.content{
+    position:fixed;
+    top: 50%;
+    left: 46%;
+    transform: translateY(-50%);
+
+}
+.content h1{
+    font-size: 70px;
+    color: black;
+    line-height: 110px;
+    margin-bottom: 25px;
+}
+.content h3{
+    font-size: 18px;
+    color: rgba(109, 106, 106, 0.829);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.content p{
+    font-size: 14px;
+    color: black;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+.social{
+    position:fixed;
+    right: 72px;
+    bottom: 40px;
+}
+.social ul li{
+    list-style: none;
+    text-align: center;
+    margin-top: 15px;
+}
+.social ul li a:hover{
+    transform: scale(1.2) translateY(-5px);
+    transition: .3s;
+    cursor: pointer;
+}
